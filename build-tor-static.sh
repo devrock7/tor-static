@@ -36,7 +36,7 @@ make install > /dev/null 2>&1
 
 echo "building tor-$VERSION"
 cd $TORSDIR/tor-0.2.4.22
-./configure --enable-static-tor --with-libevent-dir=$TMPDIR/libevent --with-openssl-dir=$TMPDIR/openssl --with-zlib-dir=$TMPDIR/zlib --prefix=$TORDIR --bindir=$TORDIR --sysconfdir=$TORDIR --datarootdir=$TORDIR/share --docdir=$TORDIR/share > /dev/null 2>&1
+./configure --enable-static-tor --with-libevent-dir=$TMPDIR/libevent --with-openssl-dir=$TMPDIR/openssl --with-zlib-dir=$TMPDIR/zlib --prefix=$TORDIR --bindir=$TORDIR --sysconfdir=$TORDIR --datarootdir=$TORDIR/share --docdir=$TORDIR/share/doc > /dev/null 2>&1
 make > /dev/null 2>&1
 echo "installing tor-$VERSION ($TORDIR)"
 make install > /dev/null 2>&1
